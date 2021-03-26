@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Glosario de JavaScript</h1>
+    <article>
+        <h3>alert()</h3>
+        <p>Muestra una alerta en el navegador.</p>
+        <code>
+            alert("Hello! I am an alert box!!");
+        </code>
+    </article>
+    <article>
+        <h3>appendChild()</h3>
+        <p>Añade un nodo como último hijo de un nodo.</p>
+        <code>
+            var node = document.getElementById("myList2").lastChild;<br>
+            document.getElementById("myList1").appendChild(node);
+        </code>
+    </article>
+    <article>
+        <h3>charAt()</h3>
+        <p>Retorna el carácter en el index especificado.</p>
+        <code>
+            var str = "HELLO WORLD";<br>
+            var res = str.charAt(0); // Salida: "H"
+        </code>
+    </article>
+    <article>
+        <h3>concat()</h3>
+        <p>Une dos o más arrays.</p>
+        <code>
+            var hege = ["Cecilie", "Lone"];<br>
+            var stale = ["Emil", "Tobias", "Linus"];<br>
+            var kai = ["Robin"];<br>
+            var children = hege.concat(stale, kai);
+        </code>
+    </article>
+    <article>
+        <h3>confirm()</h3>
+        <p>Muestra una caja de dialogo con un mensaje, un botón de aceptar y un botón de cancelar.</p>
+        <code>confirm("Estás de acuerdo?");</code>
+    </article>
+    <article>
+        <h3>console</h3>
+        <p>Referencia al objeto 'console', el más usado es log.</p>
+        <code>console.log("Mensaje mostrado en consola");</code>
+    </article>
+    <article>
+        <h3>createTextNode()</h3>
+        <p>Crea un nodo de texto.</p>
+        <code>
+            var t = document.createTextNode("This is a paragraph.");
+        </code>
+    </article>
+    <article>
+        <h3>debugger</h3>
+        <p>Detiene la ejecución de Javascript, e invoca (si es posible) la función de debugging.</p>
+        <code>
+            var x = 15 * 5;<br>
+            debugger;<br>
+            document.getElementbyId("demo").innerHTML = x;
+        </code>
+    </article>
+    <article>
+        <h3>do ... while</h3>
+        <p>Crea un loop que ejecuta un bloque de código antes de chequear si la condición es cierta, luego repite el código hasta que la condición sea cierta.</p>
+        <code>
+            var i = 0;<br>
+            do {<br>
+                console.log(i);<br>
+                i++;<br>
+            }<br>
+            while (i < 5);
+        </code>
+    </article>
+    <article>
+        <h3>entries()</h3>
+        <p>Retorna los keys de un array.</p>
+        <code>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+            var f = fruits.entries();
+        </code>
+    </article>
+    <article>
+        <h3>every()</h3>
+        <p>Evalua si todos los elementos de un array pasa una prueba.</p>
+        <code>
+            var ages = [32, 33, 16, 40];<br><br>
+
+            function checkAdult(age) {<br>
+            return age >= 18;<br>
+            }<br><br>
+
+            function myFunction() {<br>
+            document.getElementById("demo").innerHTML = ages.every(checkAdult);<br>
+            }
+        </code>
+    </article>
+    <article>
+        <h3>filter()</h3>
+        <p>Crea un array con los elementos que pasen una prueba</p>
+        <code>
+            var ages = [32, 33, 16, 40];<br><br>
+
+            function checkAdult(age) {<br>
+                return age >= 18;<br>
+            }<br><br>
+            function myFunction() {<br>
+            document.getElementById("demo").innerHTML = ages.filter(checkAdult);<br>
+            }
+        </code>
+    </article>
+    <article>
+        <h3>function</h3>
+        <p>Declara una función</p>
+        <code>
+            function miFuncion () {<br>
+                console.log("Una funcion en JS");<br>
+            }
+        </code>
+    </article>
+    <article>
+        <h3>import</h3>
+        <p>Importa una función exportada desde un módulo externo</p>
+        <code>
+            import react from 'React';
+        </code>
+    </article>
+    <article>
+        <h3>indexOf()</h3>
+        <p>Busca en el array por un elemento y retorna su index</p>
+        <code>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+            var a = fruits.indexOf("Apple");
+        </code>
+    </article>
+    <article>
+        <h3>innerHTML</h3>
+        <p>Establece o retorna el contenido de un elemento</p>
+        <code>
+            document.getElementById("demo").innerHTML = "Nuevo párrafo!";
+        </code>
+    </article>
+    <article>
+        <h3>length</h3>
+        <p>Retorna la cantidad de elementos en un array</p>
+        <code>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+            fruits.length;
+        </code>
+    </article>
+    <article>
+        <h3>let</h3>
+        <p>Declara una variable de alcance de bloque</p>
+        <code>let name = 'George';</code>
+    </article>
+    <article>
+        <h3>var</h3>
+        <p>Declara una variable de alcance global</p>
+        <code>var texto = 'Algo de texto';</code>
+    </article>
+    <article>
+        <h3>const</h3>
+        <p>Establece el valor de una constante</p>
+        <code>const SECONDS_PER_HOUR = 3600;</code>
+    </article>
+</body>
+</html>
